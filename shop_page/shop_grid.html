@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOP-Aytor</title>
+  <!-- fav_icon section start -->
+  <link rel="icon" href="../img/fav_icon.png" />
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="../css/fontawesome.min.css" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="../css/framework/bootstrap.min.css" />
+  <!-- main css-->
+  <link rel="stylesheet" href="../css/style.min.css" />
+</head>
+
+<body>
+  <!-- preloader section start -->
+  <div id="preloader">
+    <button id="cancel_preloader">Cancel Preloader</button>
+    <div class="preloder_load">
+      <img src="img/Logo.png" alt="" />
+      <div class="preloader_item">
+        <span class="preloader_item_1"></span>
+        <span class="preloader_item_2"></span>
+        <span class="preloader_item_3"></span>
+      </div>
+    </div>
+  </div>
+  <!-- preloader section end  -->
+  <!-- nav section start -->
+  <div id="side_nav" class="d-block d-lg-none">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="../img/Logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header side_nav_header position-relative">
+            <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../img/Logo.png" alt=""
+                class="text-center" /></div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav list-group list-group-flush">
+              <li class="nav-item list-group-item"><a href="../index.html" class="nav-link">Home</a></li>
+              <li class="nav-item list-group-item">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item list-group-item dropdown">
+                <a href="#" class="nav-link" role="button" data-bs-toggle="dropdown">Pages<i
+                    class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../error.html">Error Page</a></li>
+                </ul>
+              </li>
+              <li class="nav-item list-group-item dropdown">
+                <a href="../about.html" class="nav-link" role="button" data-bs-toggle="dropdown">Shop<i
+                    class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shop_grid.html">Shop Grid</a></li>
+                  <li><a class="dropdown-item" href="shop_product_compare.html">Compare</a></li>
+                  <li><a class="dropdown-item" href="shop_cart.html">Cart</a></li>
+                  <li><a class="dropdown-item" href="shop_checkout.html">Checkout</a></li>
+                  <li><a class="dropdown-item" href="shop_wishlist.html">Wishlist</a></li>
+                  <li><a class="dropdown-item" href="shop_details_style.html">Shop Details Style</a></li>
+                </ul>
+              </li>
+              <li class="nav-item list-group-item dropdown">
+                <a href="../about.html" class="nav-link" role="button" data-bs-toggle="dropdown">Blogs<i
+                    class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../blog_page/blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="../blog_page/blog_classic.html">Blog Classic</a></li>
+                  <li><a class="dropdown-item" href="../blog_page/blog_classic_with_sidebar.html">Blog Classic With
+                      Sidebar</a></li>
+                  <li><a class="dropdown-item" href="../blog_page/blog_details.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item list-group-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div id="navbar_icon">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-regular fa-user"></i>Login / Register</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-regular fa-heart"></i>Wishlist</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-bag-shopping"></i>Basket: <span>$318.00</span></a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="d-flex flex-wrap justify-content-between">
+                <li>Currency<i class="fa-solid fa-angle-down"></i></li>
+                <li>Language<i class="fa-solid fa-angle-down"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <header class="d-none d-lg-block">
+    <div id="header_nav">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between">
+          <div class="header_frist">
+            <p><i class="fa-regular fa-paper-plane"></i> FREE SHIPING world wide for all orders over <span> $150 </span>
+            </p>
+          </div>
+          <div class="header_last d-flex flex-wrap">
+            <ul class="first d-flex flex-wrap">
+              <li><a href="#">Track Your Order</a></li>
+              <li>English <i class="fa-solid fa-angle-down"></i></li>
+              <li>USD <i class="fa-solid fa-angle-down"></i></li>
+            </ul>
+            <ul class="last d-flex flex-wrap">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container">
+        <a href="../index.html" class="nav-brand"><img src="../img/Logo.png" alt="" /></a>
+        <div class="collapse navbar-collapse" id="mymenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="../about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" role="button" data-bs-toggle="dropdown">Pages<i
+                  class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../error.html">Error Page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link" data-bs-toggle="dropdown">Shop<i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="shop_grid.html">Shop Grid</a></li>
+                <li><a class="dropdown-item" href="shop_product_compare.html">Compare</a></li>
+                <li><a class="dropdown-item" href="shop_cart.html">Cart</a></li>
+                <li><a class="dropdown-item" href="shop_checkout.html">Checkout</a></li>
+                <li><a class="dropdown-item" href="shop_wishlist.html">Wishlist</a></li>
+                <li><a class="dropdown-item" href="shop_details_style.html">Shop Details Style</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">Blogs<i class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../blog_page/blog.html">Blog</a></li>
+                <li><a class="dropdown-item" href="../blog_page/blog_classic.html">Blog Classic</a></li>
+                <li><a class="dropdown-item" href="../blog_page/blog_classic_with_sidebar.html">Blog Classic With
+                    Sidebar</a></li>
+                <li><a class="dropdown-item" href="../blog_page/blog_details.html">Blog Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div id="navbar_icon">
+            <ul class="d-flex flex-wrap">
+              <li>
+                <button id="search_btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div id="Search" class="Search d-flex flex-wrap justify-content-center align-items-center">
+                  <div class="Search_bar">
+                    <form action="#">
+                      <input type="search" placeholder="What are you looking for" />
+                      <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="cancel_btn">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button><i class="fa-regular fa-user"></i></button>
+              </li>
+              <li>
+                <button><i class="fa-regular fa-heart"></i></button>
+              </li>
+              <li>
+                <button><i class="fa-solid fa-bag-shopping"></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </header>
+  <!-- nav section end  -->
+  <!-- banner section start -->
+  <section id="banner" class="second" style="background: url(../img/bg_shop.jpg);">
+    <div class="container d-flex flex-wrap justify-content-center align-items-center h-100">
+      <div>
+        <h1>Shop - Grid</h1>
+        <p class="text-center"><a href="../index.html">Home</a> / Shop - Grid</p>
+      </div>
+    </div>
+  </section>
+  <!-- banner section end  -->
+  <!-- Best Seller Products section start -->
+  <section id="Best_Products" class="second">
+    <div class="container">
+      <div class="top_sec row g-0 align-items-center justify-content-between">
+        <div class="row align-items-center col-auto">
+          <div class="btn-group buttons col-auto">
+            <button type="button" id="btn_first" class=""><i class="fa-solid fa-list"></i></button>
+            <button type="button" id="btn_second" class="active"><i class="fa-solid fa-table-cells"></i></button>
+          </div>
+          <div class="result col-auto">
+            <span>
+              Showing 12 of 16 Post
+            </span>
+            <div class="progress" role="progressbar" style="height: 2px">
+              <div class="progress-bar" style="width: 70%;background: #444;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md -auto d-flex justify-content-md-end justify-content-start pt-4 pt-md-0">
+          <select class="form_select">
+            <option value="">Default sorting</option>
+            <option value="">Sort by Latest</option>
+            <option value="">Sort by Oldest</option>
+            <option value="">Sort by Ascending</option>
+            <option value="">Sort by Descending</option>
+          </select>
+        </div>
+      </div>
+      <div class="Best_Products_contain_two">
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_1.jpg" alt="" />
+              <div class="products_item_offer">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Spaghetti Hoodie</a>
+              </h4>
+              <p class="price">$125.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_2.jpg" alt="" />
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Crew Neck Cotton</a>
+              </h4>
+              <p class="price">$150.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_3.jpg" alt="" />
+              <div class="products_item_offer">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Spaghetti Strap Dress</a>
+              </h4>
+              <p class="price">$125.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_4.jpg" alt="" />
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Pink Neck Frog</a>
+              </h4>
+              <p class="price">$350.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_5.jpg" alt="" />
+              <div class="products_item_offer">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">T-shirt Blouse Sleeve</a>
+              </h4>
+              <p class="price">$125.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_6.jpg" alt="" />
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Crew Neck T-shirt</a>
+              </h4>
+              <p class="price">$150.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_7.jpg" alt="" />
+              <div class="products_item_offer">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Blouse Jacket</a>
+              </h4>
+              <p class="price">$125.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_8.jpg" alt="" />
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Hoodie Sweater Bluza</a>
+              </h4>
+              <p class="price">$350.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_9.jpg" alt="" />
+              <div class="products_item_offer">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Hoodie Coat Outerwear</a>
+              </h4>
+              <p class="price">$125.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_10.jpg" alt="" />
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Flight jacket</a>
+              </h4>
+              <p class="price">$150.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_11.jpg" alt="" />
+              <div class="products_item_offer">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Shoulder Dress, Plus-size</a>
+              </h4>
+              <p class="price">$125.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Best_Products_contain_div">
+          <div class="row g-0">
+            <div class="col-md-3 products_img">
+              <img src="../img/product_1_12.jpg" alt="" />
+            </div>
+            <div class="products_item col-md-9">
+              <h4>
+                <a href="../shop_page/shop_details_style.html">Pajamas Nightwear</a>
+              </h4>
+              <p class="price">$350.65</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5)</span>
+              </div>
+              <p class="text">Quickly engage backward-compatible core competencies rather than cross-platform synergy.
+                Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources.
+                Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured
+                products. Credibly target 24/365 niche.</p>
+              <div class="overlay">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Best_Products_contain show">
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_1.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Spaghetti Hoodie</h4>
+                    </a>
+                    <p>$125.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="products_item_offer">
+                  <p>New</p>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_2.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Crew Neck Cotton</h4>
+                    </a>
+                    <p>$150.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_3.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Spaghetti Strap Dress</h4>
+                    </a>
+                    <p>$125.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="products_item_offer">
+                  <p>New</p>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_4.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Pink Neck Frog</h4>
+                    </a>
+                    <p>$350.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_5.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>T-shirt Blouse Sleeve</h4>
+                    </a>
+                    <p>$125.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="products_item_offer">
+                  <p>New</p>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_6.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Crew Neck T-shirt</h4>
+                    </a>
+                    <p>$150.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_7.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Blouse Jacket</h4>
+                    </a>
+                    <p>$125.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="products_item_offer">
+                  <p>New</p>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_8.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Hoodie Sweater Bluza</h4>
+                    </a>
+                    <p>$350.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_9.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Hoodie Coat Outerwear</h4>
+                    </a>
+                    <p>$125.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="products_item_offer">
+                  <p>New</p>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_10.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Flight jacket</h4>
+                    </a>
+                    <p>$150.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_11.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Shoulder Dress, Plus-size</h4>
+                    </a>
+                    <p>$125.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="products_item_offer">
+                  <p>New</p>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="Best_Products_contain_div">
+              <div class="products_item text-start">
+                <div><img src="../img/product_1_12.jpg" alt="" /></div>
+                <div>
+                  <div>
+                    <a href="../shop_page/shop_details_style.html">
+                      <h4>Pajamas Nightwear</h4>
+                    </a>
+                    <p>$350.65</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5)</span>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <ul>
+                    <li>
+                      <button><i class="fa-solid fa-cart-plus"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Cart</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <div class="overlay_text">
+                        <p>Add to Wishlist</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-eye"></i></button>
+                      <div class="overlay_text">
+                        <p>Quick View</p>
+                      </div>
+                    </li>
+                    <li>
+                      <button><i class="fa-solid fa-signal"></i></button>
+                      <div class="overlay_text">
+                        <p>Compare</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pages">
+        <ul class="d-flex flex-wrap justify-content-center">
+          <li>
+            <a href="#"><i class="fa-solid fa-arrow-left"></i> Pre</a>
+          </li>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Next <i class="fa-solid fa-arrow-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Best Seller Products section end  -->
+
+  <!-- footer section start -->
+  <footer id="footer" class="second">
+    <div class="first_footer">
+      <div class="container">
+        <div class="first">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <h3>Subscribe to Our Newsletter!</h3>
+              <p>
+                Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <form action="">
+                <div class="row g-0 h-100">
+                  <input type="email" class="col-8" placeholder="Enter your email...." />
+                  <button type="submit" class="col-4">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="last">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <div class="logo"><img src="img/Logo.png" alt="" /></div>
+              <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+              <div class="row g-0">
+                <div class="col-md-12 d-flex flex-wrap justify-content-between">
+                  <div>
+                    <ul class="d-flex flex-wrap media">
+                      <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-2 col-sm-6 child">
+              <h3>My Account</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> My Account</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> View Cart</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Wishlist</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Compare</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> New Products</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6 child">
+              <h3>Support</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Help</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Contact Us</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Feedback</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Customer
+                    Service</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Store
+                    Locations</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6 child">
+              <h3>Shop</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Men’s Shopping</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Women’s Shopping</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Kids’ Shopping</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> Discounts</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-angle-right"></i> New Arrivels</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 child">
+              <h3>Contact Us</h3>
+              <div class="row">
+                <i class="fa-solid fa-location-dot col-2 icon"></i>
+                <address class="col-10">
+                  830 Broadway, New York, NY 10003, United States
+                </address>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-phone col-2 icon"></i>
+                <a href="callto:+18008660286" class="col-10 mail">+18008660286</a>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-envelope col-2 icon"></i>
+                <div class="col-10">
+                  <a href="mailto:aetor.info@gmail.com " class="d-block mail">aetor.info@gmail.com</a><a
+                    href="mailto:info@aetor.com " class="d-block mail">info@aetor.com</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="last_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 text-center text-md-start">
+            <p>
+              &copy; 2022 All Rights Reserved
+              <a href="https://angfuzsoft.com/html/aytor/demo/index-2.html" target="_blank">Aytor</a>
+              By <a href="https://angfuzsoft.com/" target="_blank">Angfuzsoft</a>.
+            </p>
+            <p>
+              RE-DESIGN BY
+              <a href="https://www.linkedin.com/in/samit-intesar/" target="_blank">MD SAMIT INTESAR</a>
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-4 d-flex justify-content-lg-end justify-content-center"><img src="img/cards.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+
+  <!-- back to top section start -->
+  <button id="back_to_top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <!-- back to top section end  -->
+  <!-- jquery js -->
+  <script src="../js/framework/jquery-1.12.4.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="../js/framework/bootstrap.bundle.min.js"></script>
+
+  <!-- main js -->
+  <script src="../js/shop/shop.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    $("#btn_first").on("click",function(){
+      $("#btn_first").addClass("active");
+      $("#btn_second").removeClass("active");
+      $(".Best_Products_contain_two").addClass("show");
+      $(".Best_Products_contain").removeClass("show");
+    });
+    $("#btn_second").on("click",function(){
+      $("#btn_second").addClass("active");
+      $("#btn_first").removeClass("active");
+      $(".Best_Products_contain").addClass("show");
+      $(".Best_Products_contain_two").removeClass("show");
+    });
+  </script>
+</body>
+
+</html>

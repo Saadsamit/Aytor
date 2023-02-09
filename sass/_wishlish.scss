@@ -1,0 +1,75 @@
+#wishlish{
+    padding: 100px 0;
+        .wishlish_table{
+            thead{
+                tr{
+                    background: $BG;
+                    border-bottom: 2px solid $primary-1st-color;
+                    th{
+                        color: $text-color;
+                        padding: 15px;
+                        font-family: $haeder-text;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+
+            }
+            tbody{
+                tr{
+                    border: 1px solid #bdbdbd;
+                    td{
+                        padding: 15px;
+                        color: $paragraph-color;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        h3{
+                            
+                            a{
+                                color: $paragraph-color;
+                                font-family: $body-text;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;  
+                                transition: .5s;
+                            }
+                        }
+                        .link{
+                            @include btnstyle;
+                            margin: 0;
+                            padding: 11px 15px;
+                            font-size: 17px;
+                            line-height: 25px;
+                        }
+                        i.fa-xmark{
+                            cursor: pointer;
+                            color: $text-color;
+                            transition: .5s;
+                        }
+                        i.fa-xmark:hover,
+                        h3:hover a{
+                            color: $primary-1st-color;
+                        }
+                        i.fa-check{
+                            color: #29CC00;
+                        }
+                    }
+                }
+            }
+        }
+}
+@media (max-width:767px){
+    #wishlish .wishlish_table thead  {
+        display: none;
+    }
+    #wishlish .wishlish_table tbody tr{
+        display: block;
+        margin: 25px 0;
+    }
+    #wishlish .wishlish_table tbody tr td {
+        display: block;
+        border-bottom: 1px solid #BDBDBD;
+    }
+}

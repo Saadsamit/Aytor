@@ -1,0 +1,26 @@
+#banner.three {
+    height: 770px;
+     h1{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+     }
+     a{
+        @include btnstyle;
+     }
+}
+@media (max-width: 767px){
+    #banner.three {
+        height: 600px;
+         a {
+            padding: 12px 15px;
+        }
+    }
+}
+/* Extra small css start */
+@media (max-width:576.99px){
+    #banner.three {
+        height: 600px;
+    }
+}
+/* Extra small css end */

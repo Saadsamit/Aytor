@@ -1,0 +1,83 @@
+#Best_Products.blog_classic{
+    .blog_img_arrow {
+        color: $common-color;
+        width: 30px;
+        height: 50px;
+        background: rgba(21, 26, 50, 0.5);
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        z-index: 9;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+      }
+      i.fa-chevron-left {
+        left: 0;
+      }
+      i.fa-chevron-right {
+        right: 0;
+      }
+      .product_info{
+        padding: 20px;
+        h4{
+            color: $text-color;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p{
+                color: $paragraph-color;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            .name,.date{
+                color: $paragraph-color;
+                text-decoration: none;
+                padding: 0;
+            }
+            .name{
+                padding-right: 10px;
+                border-right: 1px solid #BDBDBD;
+            }
+            .date{
+                padding-left: 10px;
+            }
+        }
+      }
+    .video_bg{
+        position: relative;
+      .video_container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.4);
+        .video_link {
+          i {
+            color: $primary-1st-color;
+            background: $common-color;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            transition: .7s;
+          }
+          &:hover i{
+            color: $common-color;
+            background: $primary-1st-color;
+          }
+        }
+      }
+    }
+}
+@media(max-width:576px){
+    #Best_Products.blog_classic .product_info h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

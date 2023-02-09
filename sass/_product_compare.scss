@@ -1,0 +1,97 @@
+#product_compare{
+    padding: 100px 0;
+    .search{
+        background: $BG;
+        border: 1px solid #BDBDBD;
+        border-bottom: none;
+        padding: 12px 30px;
+        form{
+            input[type="search"]{
+                color: $text-color;
+                background: $BG;
+                border: none;
+                outline: 0;
+                font-family: $haeder-text;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                display: inline-block;
+            }
+            button{
+                display: inline-block;
+                color: $primary-1st-color;
+                border-left: 1px solid $primary-1st-color;
+                padding-left: 15px;
+                &:hover{
+                    transition: .5s;
+                    color: $text-color;  
+                }
+            }
+        }
+    }
+    .compare_table{
+        overflow-x: auto;
+        table{
+            tr:nth-child(even){
+                background-color: $BG;
+            }
+            .bg_color{
+                background-color: $common-color !important;
+            }
+            th,td{
+                border: 1px solid #BDBDBD;
+                padding: 20px;
+            }
+            th{
+                color: $text-color;
+                font-family: $haeder-text;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+            }
+            td{
+                i{
+                    color: $primary-1st-color;
+                }
+                h3{
+                    a{
+                    color: $text-color;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    }
+                }
+                .text{
+                    color: $paragraph-color;
+                    font-family: $haeder-text;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                .check{
+                    color: #29CC00;
+                }
+            }
+            .link{
+                a{
+                    @include btnstyle;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:992px){
+    #product_compare .compare_table table td .text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    #product_compare .compare_table table td i {
+        font-size: 11px;
+    }
+    #product_compare .compare_table table .link a {
+        line-height: 18px;
+    }
+}

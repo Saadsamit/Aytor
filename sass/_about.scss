@@ -1,0 +1,282 @@
+/* learn about css start */
+#learn_about {
+    padding: 100px 0;
+    .about {
+        .img{
+          transform: translateX(-10%);
+          position: relative;
+          z-index: 2;
+          &::after{
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: -40px;
+            height: 314px;
+            width: 284px;
+            border: 14px solid #bdbdbd;
+            z-index: -1;
+            animation: movingX 5s infinite linear alternate;
+          }
+          img{
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .about_info {
+            padding-right: 100px;
+          }
+          .about_start {
+            padding: 75px 0 25px;
+            border-bottom: 1px solid #bdbdbd;
+            h3 {
+                color: $text-color;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 46px;
+                padding-bottom: 20px;
+              }
+              p {
+                color: $paragraph-color;
+              }
+          }
+          .about_end {
+            padding: 15px 0 75px;
+            p {
+                padding: 10px 0;
+                i {
+                    color: $primary-1st-color;
+                    padding-right: 5px;
+                  }
+              }
+              a {
+                @include btnstyle;
+              }
+          }
+      }
+      .about_shape{
+        background: $BG;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+  }
+  @keyframes movingX {
+    to{
+      left: 20%;
+    }
+    
+    from{
+      left: 0;
+     }
+  }
+  /* learn about css end */
+  /* shop info css start */
+  #shop .shop_info {
+    padding-bottom: 100px;
+    p {
+        color: $paragraph-color;
+        i {
+            color: $black-color;
+            background: rgba(255, 111, 97, 0.1);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            font-size: 40px;
+            transition: 0.5s;
+            &:hover {
+                color: $primary-1st-color;
+                background: rgba(241, 243, 244, 1);
+              }
+          }
+          span {
+            color: $primary-1st-color;
+            font-family: $haeder-text;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 46px;
+          }
+      }
+  }
+  /* shop info css end */
+  /* video css start */
+  #order.second {
+    padding: 100px 0;
+    .order {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+  } 
+  /* video css end */
+  /* new_arrivals_products css start */
+  #new_arrivals_products.second .products_contain {
+    .products_item {
+        h4 {
+            padding-top: 20px;
+          }
+          p {
+            padding: 10px;
+            color: $primary-1st-color;
+          }
+          .star a {
+            i {
+                padding: 0 5px;
+                color: $paragraph-color;
+                transition: 0.5s;
+              }
+              &:hover i {
+                color: $primary-1st-color;
+              }
+          }
+    }
+    .products_contain_arrow {
+        color: #a6aab7;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #a6aab7;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        border-radius: 50%;
+        transition: 0.5s;
+        &:hover {
+            color: $common-color;
+            background: $primary-1st-color;
+          }
+          &.fa-caret-left {
+            left: -5px;
+          }
+          &.fa-caret-right {
+            right: -5px;
+          }
+      }
+  } 
+  /* new_arrivals_products css end */
+  /* review css start */
+  #review {
+    .review_bg {
+        background: url(../img/review.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 60px;
+      }
+      .first_part {
+        i {
+            color: $A6AAB7;
+            font-size: 40px;
+          }
+      }
+      .review_contant {
+        .review_item {
+            .img {
+                padding: 20px 0;
+                img {
+                    display: block;
+                    margin: auto;
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 50%;
+                  }
+              }
+              p {
+                color: $paragraph-color;
+                padding-bottom: 10px;
+              }
+              h4 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 34px;
+              }
+              .last {
+                color: $primary-1st-color;
+              }
+        }
+        .review_dots {
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            li {
+                display: inline-block;
+                font-size: 0;
+                cursor: pointer;
+                background: $A6AAB7;
+                padding: 3px 6px;
+                margin: 0 2px;
+                border-radius: 5px;
+                transition: 0.5s;
+                &.slick-active {
+                    background: $primary-1st-color;
+                    padding: 3px 12px;
+                  }
+                  button {
+                    border: none;
+                    font-size: 0;
+                  }
+              }
+          }
+      }
+  }
+  /* review css end */
+  /* Instagram css start */
+  #instagram {
+    padding: 100px 0;
+    .instagram_contain {
+        .instagram_item {
+            padding: 0 12px;
+            .img {
+                width: fit-content;
+                position: relative;
+                .overlay {
+                    background: rgba(21, 26, 50, 0.6);
+                    position: absolute;
+                    inset: 0;
+                    transform: scale(0);
+                    transition: 0.5s;
+                    i {
+                        color: $common-color;
+                        font-size: 40px;
+                        transition: 0.5s;
+                        &:hover {
+                            color: $primary-1st-color;
+                          }
+                      }
+                  }
+                  &:hover > .overlay {
+                    transform: scale(1);
+                  }
+              }
+          }
+          .instagram_dots {
+            padding: 12px 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            li {
+                display: inline-block;
+                font-size: 0;
+                cursor: pointer;
+                background: $A6AAB7;
+                padding: 3px 6px;
+                margin: 0 2px;
+                border-radius: 5px;
+                transition: 0.5s;
+                button {
+                    border: none;
+                    font-size: 0;
+                  }
+              }
+              li.slick-active {
+                background: $primary-1st-color;
+                padding: 3px 12px;
+              }
+          }
+    }
+  }
+  /* Instagram css end */

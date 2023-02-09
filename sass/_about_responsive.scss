@@ -1,0 +1,74 @@
+/* Extra large css start */
+@media (max-width:1999.99px){
+    #learn_about .about .img::after {
+        left: 0;
+    }
+}
+/* Extra large css end */
+/* Medium css start */ 
+@media (max-width:991.99px){
+    #learn_about .about .img {
+        transform: translateX(0);
+    }
+    #learn_about .about{
+        padding: 20px;
+    }
+}
+/* Medium css end */
+/* Extra small css start */
+@media (max-width:767px) {
+    #learn_about {
+        padding: 70px 0;
+    }
+    #shop .shop_info {
+        padding-bottom: 50px;
+    }
+    #order.second {
+        padding: 15px 0;
+    }
+}
+/* Extra small css end */
+/* small css start */
+@media (max-width:576.99px){
+
+    #learn_about .about .img::after {
+        display: none;
+    }
+    #learn_about .about .about_start {
+        padding: 40px 0 0px;
+    }
+    #learn_about .about .about_info {
+        padding-right: 0;
+    }
+    #learn_about .about .about_start h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #learn_about .about .about_start p {
+        padding: 0 0 30px;
+    }
+    #learn_about .about .about_end a {
+        padding: 11px 12px;
+        font-size: 17px;
+    }
+    #learn_about .about .about_end {
+        padding: 15px 0 20px;
+    }
+    #order .order .order_item .order_list .text h4 {
+        font-size: 18px;
+    }
+    #shop .shop_info p i {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        margin-bottom: 10px;
+        font-size: 34px;
+    }
+    #shop .shop_info {
+        padding-bottom: 35px;
+    }
+    #new_arrivals_products {
+        padding: 15px 0;
+    }
+}
+/* small css end */

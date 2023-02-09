@@ -1,0 +1,43 @@
+/* 
+Template Name: Aytor
+version: 1.0.0
+Author: Aytor
+
+
+Table of Content
+===========================
+   ********Home Page*********
+   1) Nav Section
+   2) Banner Section
+   3) products_section
+   4) new_arrivals_products Section
+   5) offer section
+   6) Best Seller Products section
+   7) deals section
+   8) video section
+   9) Latest News section
+   10) order section
+   11) footer
+   12) back to top
+   */
+
+@import 'common';
+@import 'Components';
+@import 'index';
+@import 'about';
+@import 'shop';
+
+
+//responsive
+@import 'common_responsive';
+@import 'index_responsive';
+@import 'about_responsive';
+//responsive
+
+
+
+@import 'contact';
+@import 'error';
+
+   
+  

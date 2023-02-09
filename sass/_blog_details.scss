@@ -1,0 +1,223 @@
+#Best_Products.details{
+    .blog_sidebar {
+       padding-top: 0;
+   }
+   .Best_Products_contain_div{
+   p{
+    color: $paragraph-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 20px 0;
+    .comment{
+        padding: 0 10px;
+        border-left: 1px solid #BDBDBD;
+        border-right: 1px solid #BDBDBD;
+    }
+    .like{
+        padding-right: 10px;
+    }
+    .share{
+        padding-left: 10px;
+    }
+    .like,.comment,.share{
+
+        a{
+        color: $paragraph-color;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        transition: .5s;
+        &:hover{
+            color: $primary-1st-color;
+        }
+        }
+    }
+   }
+   .star{
+    background: $BG;
+    border-left: 4px solid $primary-1st-color;
+    margin: 15px 0;
+    p{
+        padding: 40px 50px;
+        font-style: italic;
+    }
+   }
+    .tags{
+        padding: 50px 0;
+        margin: 15px 0;
+        border-top: 1px solid #BDBDBD;
+        border-bottom: 1px solid #BDBDBD;
+        h5{
+            display: inline-block;
+            color: $text-color;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        a{
+            color: $paragraph-color;
+            background: $BG;
+            padding: 10px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            transition: .5s;
+            &:hover{
+                color: $common-color;
+                background: $primary-1st-color;
+            }
+        }
+        .share{
+            a{
+                background: none;  
+                &:hover{
+                    color: $primary-1st-color;
+                }
+            }
+        }
+    }
+    .comment_container{
+        background: $BG;
+        padding: 20px;
+        margin: 25px 0;
+    }
+        .comment_img{
+            img{
+                border-radius: 50%;
+            }
+        }
+        .comment_text{
+            h6{
+                color: $text-color;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p{
+                color: $paragraph-color;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                padding: 0;
+            }
+            .sub{
+                color: $primary-1st-color;
+            }
+            .icons{
+                margin: 15px 0 ;
+                a{
+                color: #828282;
+                padding-right: 10px;
+                transition: .5s;
+                &:hover{
+                    color: $text-color;
+                }
+                }
+            }
+        }
+    .post{
+        h3{
+            color: $text-color;
+            margin: 25px 0;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .comments{
+            padding: 25px 0;
+        .post_date{
+            margin-bottom: 10px;
+            p{
+                a{
+                color: $paragraph-color;
+                font-family: $haeder-text;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                transition: .5s;
+                &:hover{
+                    color: $primary-1st-color;
+                }
+                }
+                
+            }
+        }
+    }
+    .comments.second{
+        margin-left: 40px;
+    }
+}
+    .form{
+        padding: 50px 0;
+        h3{
+            color: $text-color;
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p{
+            color: $paragraph-color;
+            padding: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+        form{
+            input,textarea{
+                width: 100%;
+                border: none;
+                background: $BG;
+                padding: 10px;
+                margin-bottom: 20px;
+                outline: 0;
+            }
+            input:focus,textarea:focus{
+                border: 1px solid $primary-1st-color;
+            }
+            textarea{
+               height: 250px;
+               resize: none;
+            }
+            button{
+                @include btnstyle($primary-3D-color , $primary-1st-color);
+                margin: 10px 0;
+                padding: 11px 14px;
+                font-size: 17px;
+                line-height: 25px;
+            }
+        }
+    }
+   }
+}
+@media (max-width:992px){
+    #Best_Products.details .Best_Products_contain_div p {
+        padding: 6px 0;
+    }
+    #Best_Products.blog_classic .product_info h4 {
+        font-size: 24px;
+    }
+    #Best_Products.details .Best_Products_contain_div .tags .share {
+        padding-top: 15px;
+    }
+    #Best_Products.details .Best_Products_contain_div .form form textarea {
+        height: 140px;
+    }
+
+}
+@media (max-width:767px){
+    #Best_Products.details .blog_sidebar {
+        padding-top: 20px;
+    }
+}
+@media (max-width:576px){
+    #Best_Products.details .Best_Products_contain_div .post .comments.second {
+        margin-left: 10px;
+    }
+    #Best_Products.details .Best_Products_contain_div .comment_text p {
+        line-height: 20px;
+    }
+    
+}

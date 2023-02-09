@@ -1,0 +1,200 @@
+/* Medium css start */
+@media(max-width:991.99px){
+    #products_section .products_section_div .products_inner_section.second {
+        margin-top: 30px;
+      }
+      #new_arrivals_products .products_contain .products_item .overlay {
+        top: 11px;
+        ul li {
+            button i {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+            }
+            .overlay_text {
+                right: 100%;
+                p {
+                    display: inline-block;
+                    padding: 0 5px;
+                }
+            }
+        }
+      } 
+      #new_arrivals_products .products_contain .products_item h4 {
+        padding-top: 0px;
+    }
+    #Best_Products .Best_Products_contain .products_item .overlay {
+        top: 11px;
+        ul li {
+            button i {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+            }
+        .overlay_text {
+            right: 100%;
+            p {
+                display: inline-block;
+                padding: 0 5px;
+            }
+    }
+    
+    }
+
+}
+#order .order .order_item .order_list:nth-child(2) {
+    border-right: none;
+  }
+  #footer{
+    .last{
+      .child{
+        padding: 15px 0;
+      }
+    }
+  }
+}
+/* Medium css end */
+
+/* Extra small css start */
+@media(max-width:767px) {
+    #order .order {
+        transform: translateY(30%);
+      }
+}
+
+/* Extra small css end */
+/* small css start */
+@media (max-width:576.99px){
+    #banner .banner_item {
+        height: 620px;
+        p {
+            font-size: 15px;
+            line-height: 10px;
+        }
+        h2 {
+            margin: 17px 0;
+            font-size: 30px;
+            line-height: 55px;
+        }
+        .banner_text {
+            font-size: 17px;
+            line-height: 20px;
+        }
+         a {
+            margin: 20px 0;
+            padding: 11px 15px;
+            font-size: 17px;
+        }
+    }
+    #products_section {
+        padding: 30px;
+        .products_section_div .products_inner_section .overlay {
+            h3 {
+                font-size: 24px;
+                line-height: 23px;
+            }
+            a {
+                line-height: 22px;
+            }
+        }
+    }
+    #new_arrivals_products {
+        padding: 50px 0;
+        h3 {
+            font-size: 28px;
+            line-height: 30px;
+        }
+      } 
+      #offer {
+        padding: 40px;
+        .offer_inner{
+            h3 {
+                font-size: 25px;
+                line-height: 34px;
+            } 
+            p {
+                padding-bottom: 20px;
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+    }
+    #Best_Products {
+        padding: 50px 0;
+    }
+    #Best_Products .Best_Products_contain .products_item img{
+        width: 100%;
+    }
+    #Best_Products .Best_Products_button {
+        padding-top: 0;
+    }
+    #Best_Products .Best_Products_button a {
+        padding: 11px 15px;
+        font-size: 17px;
+    }
+    #Best_Products .Best_Products_haeding {
+	font-size: 28px;
+	line-height: 18px;
+}
+    #deals .deals_heading h3 {
+        font-size: 28px;
+        line-height: 14px;
+        padding-bottom: 7px;
+    }
+    #deals .deals_countdown {
+        padding: 20px;
+    }
+    #offer .offer_inner a {
+	font-size: 17px;
+	padding: 10px 13px;
+}
+    #deals .deals_banner .deals_banner_contant a {
+        margin: 7px 0;
+        padding: 11px 15px;
+        font-size: 17px;
+    }
+    #deals .deals_banner {
+        padding: 50px 40px;
+    }
+    #deals .deals_banner .deals_banner_contant h3 {
+        font-size: 27px;
+        line-height: 38px;
+        padding-bottom: 11px;
+    }
+    #deals .deals_banner .deals_banner_contant {
+        padding: 20px 20px;
+    }
+    #special .first_part {
+        padding: 50px 20px 50px 20px;
+    }
+    #special .first_part a {
+        margin: 16px 0;
+        padding: 11px 15px;
+        font-size: 17px;
+    }
+    #special .first_part h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #latest_news h3 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 25px;
+    }
+    #order .order .order_item .order_list {
+        border-right: none;
+    }
+    #order .order {
+	transform: translateY(20%);
+}
+    #footer .first_footer .last {
+        padding: 20px;
+    }
+    #footer .first_footer .first img{
+        padding-top: 20px;
+    }
+    #footer .first_footer .first {
+        padding: 150px 0 50px 0;
+    }
+}
+/* small css end */

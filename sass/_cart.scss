@@ -1,0 +1,152 @@
+#cart{
+    padding: 100px 0;
+    table{
+        width: 100%;
+    }
+    .main_cart{
+        table{
+            thead{
+                tr{
+                    background: $BG;
+                    border-bottom: 2px solid $primary-1st-color;
+                    th{
+                        color: $text-color;
+                        padding: 15px;
+                        font-family: $haeder-text;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+
+            }
+            tbody{
+                .main{
+                    td{
+                        color: $paragraph-color;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        a{
+                            color: $paragraph-color;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 28px;  
+                        }
+
+                    }
+                }
+                td{
+                    border: 1px solid #bdbdbd;
+                    padding: 15px;
+                }
+                .cart_coupon{
+                    input{
+                        padding: 15px 15px;
+                        outline: 0;
+                        border: 1px solid #BDBDBD;
+                    }
+                    .links{
+                        margin-left: 10px
+                    }
+                }
+            }
+        }
+    }
+    .cart_total{
+        padding-top: 25px;
+        h2{
+            padding-bottom: 25px;
+            color: $text-color;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+        }
+        .total{
+            th,td{
+                color: $paragraph-color;
+                border: 1px solid #bdbdbd;
+                padding: 15px 20px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            th{
+                font-family: $haeder-text;
+                width: 40%;
+                background: $BG;
+            }
+        }
+        .Checkout{
+            margin-top: 25px; 
+        }
+    }
+    .links{
+        @include btnstyle;
+        margin: 0;
+        padding: 11px 15px;
+    }
+}
+.quantity.second{
+    #quantity_minus:hover,
+    #quantity_plus:hover{
+      color: $primary-1st-color;
+    }
+    .icon{
+      border: 1px solid #BDBDBD;
+      border-radius: 7px;
+      margin: 0 5px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: $paragraph-color;
+      transition: .5s;
+    }
+    #quantity_input{
+      border: 1px solid #BDBDBD;
+      outline: none;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+          -webkit-appearance: none;
+   }
+   Input[type="number"]{
+    -moz-appearance: textfield;
+   }
+  }
+i.fa-trash-can{
+    cursor: pointer;
+    color: $primary-1st-color;
+}
+@media (max-width:992px){
+    #cart .main_cart table thead{
+        display: none;
+    }
+    #cart .main_cart table tbody .main td {
+        display: block;
+        position: relative;
+    }
+    #cart .main_cart table tbody .main td::before{
+        content: attr(data-title);
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+    #cart .main_cart table tbody .cart_coupon .coupon_link{
+        margin-top: 15px;
+    }
+}
+@media (max-width:576px){
+    #cart .cart_total .Checkout {
+        margin-top: 15px;
+    }
+    #cart .links {
+        margin: 9px 0;
+    }
+    #cart .main_cart table tbody .cart_coupon .links {
+        margin-left: 0;
+    }
+    
+}

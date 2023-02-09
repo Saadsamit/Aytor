@@ -1,0 +1,44 @@
+#Best_Products.third{
+    .products_item{
+        box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+        .products_item_offer p {
+            background: rgba(17, 22, 30, .4);
+        }
+        .product_info{
+            padding-left: 20px;
+            .star{
+                a{
+                    color: $paragraph-color;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 28px;
+                    position: relative;
+                    &:hover{
+                        color: $primary-1st-color;
+                      }
+                      &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 100%;
+                        bottom: 0;
+                        width: 0;
+                        height: 1.5px;
+                        background: $common-color;
+                        transition: .5s;
+                      }
+                      &:hover::before{
+                        width: 100%;
+                        background: $primary-1st-color;
+                      }
+                }
+            }
+        }
+    }
+    .last{
+        margin-top: 55px;
+    }
+     .pages {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,56 @@
+/* Extra small css start */
+@media (max-width:767px) {
+    #popup_container #popup {
+        width: 80%;
+        height: 90%;
+    }
+    #banner.second {
+        height: 350px;
+    }
+    #footer.second .first_footer .first {
+        padding: 40px 0;
+    }
+}
+/* Extra small css end */
+/* small css start */
+@media (max-width:576.99px){
+    #popup_container #popup {
+        width: 100%;
+        height: 100%;
+    }
+    #popup_container #popup h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #popup_container #popup p {
+        padding: 15px 0 40px;
+        line-height: 20px;
+    }
+    #popup_container #popup form .from {
+        transform: translateX(-28px);
+    }
+    #banner.second {
+        height: 270px;
+    }
+    #banner.second h1 {
+        font-size: 35px;
+        line-height: 23px;
+    }
+    #footer.second .first_footer .first h3 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 5px;
+    }
+    #footer.second .first_footer .first form {
+        padding: 23px 0;
+    }
+    #back_to_top {
+        right: 25px;
+    }
+    #back_to_top i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+/* small css end */

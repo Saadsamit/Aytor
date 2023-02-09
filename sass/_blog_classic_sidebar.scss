@@ -1,0 +1,117 @@
+#Best_Products.sidebar{
+    .blog_sidebar{
+        padding-top: 10px;
+        .form{
+            background: $BG;
+            padding: 15px;
+            input{
+                background: transparent;
+                border: none;
+                outline: 0;
+                &:focus{
+                    border: none; 
+                }
+            }
+            button{
+                border-left: 1px solid #BDBDBD;
+                transition: .5s;
+                &:hover{
+                    color: $primary-1st-color;
+                }
+            }
+        }
+        h3{
+            color: $text-color;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            display: inline-block;
+            margin: 25px 0;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $primary-1st-color;
+                padding: 1px 0;
+            }
+        }
+        ul{
+            li{
+                padding: 10px 0;
+                border-bottom: 1px solid $BG;
+                &:last-child{
+                    border: none;
+                }
+                a,span{
+                    color: $paragraph-color;
+                    font-family: $haeder-text;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    transition: .5s;
+                }
+                &:hover a,
+                &:hover span{
+                    color: $primary-1st-color;
+                }
+            }
+        }
+        .sidebar_container{
+            .sidebar_contain{
+                padding: 10px 0;
+                border-bottom: 1px solid $BG;
+                &:last-child{
+                    border: none;
+                }
+                .sidebar_img{
+                    img{
+                        height: 100%;
+                    }
+                }
+                .sidebar_info{
+                    h4{
+                        font-size: 16px;
+                        line-height: 26px;
+                        a{
+                        color: $black-color;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        transition: .5s;
+                        }
+                        &:hover a{
+                            color: $primary-1st-color; 
+                        }
+                    }
+                    p{
+                        color: $paragraph-color;
+                        font-family: $haeder-text;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+        .links{
+            a{
+                display: inline-block;
+                color: $paragraph-color;
+                background: $BG;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                padding: 5px;
+                margin-bottom: 5px;
+                transition: .5s;
+                &:hover{
+                    color: $common-color;
+                    background: $primary-1st-color;
+                }
+            }
+        }
+    }
+}
